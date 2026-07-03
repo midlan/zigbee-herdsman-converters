@@ -126,6 +126,7 @@ import {definitions as heatit} from "./heatit";
 import {definitions as heiman} from "./heiman";
 import {definitions as heimgardTechnologies} from "./heimgard_technologies";
 import {definitions as hej} from "./hej";
+import {definitions as hellozigbee} from "./hellozigbee";
 import {definitions as hfh} from "./hfh";
 import {definitions as hilux} from "./hilux";
 import {definitions as hive} from "./hive";
@@ -504,6 +505,7 @@ const definitions: DefinitionWithExtend[] = [
     ...heiman,
     ...heimgardTechnologies,
     ...hej,
+    ...hellozigbee,
     ...hfh,
     ...hilux,
     ...hive,
