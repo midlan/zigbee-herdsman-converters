@@ -37,7 +37,6 @@ interface HelloZigbeeSwitchCfgCluster {
 const addSwitchCfgCluster = m.deviceAddCustomCluster("genOnOffSwitchCfg", {
     ID: 0x0007,
     name: "genOnOffSwitchCfg",
-    manufacturerCode,
     attributes: {
         switchMode: {name: "switchMode", ID: 0xff00, type: Zcl.DataType.ENUM8, manufacturerCode},
         relayMode: {name: "relayMode", ID: 0xff01, type: Zcl.DataType.ENUM8, manufacturerCode},
