@@ -206,6 +206,7 @@ export const definitions: DefinitionWithExtend[] = [
             m.deviceTemperature(),
         ],
         configure: configureReadSwitchCfg,
+        ota: true,
     },
     {
         zigbeeModel: ["hello.zigbee.QBKG11LM"],
@@ -220,6 +221,7 @@ export const definitions: DefinitionWithExtend[] = [
             m.deviceTemperature(),
         ],
         configure: configureReadSwitchCfg,
+        ota: true,
     },
     {
         zigbeeModel: ["hello.zigbee.QBKG12LM"],
@@ -236,5 +238,6 @@ export const definitions: DefinitionWithExtend[] = [
             m.deviceTemperature(),
         ],
         configure: configureReadSwitchCfg,
+        ota: true,
     },
 ];
