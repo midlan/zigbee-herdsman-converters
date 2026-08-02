@@ -213,7 +213,7 @@ export const definitions: DefinitionWithExtend[] = [
         vendor: "DIY",
         description: "Hello Zigbee switch firmware for Aqara QBKG11LM",
         extend: [
-            m.deviceEndpoints({endpoints: {common: 1, button: 2}}),
+            m.deviceEndpoints({endpoints: {common: 1, button: 2}, multiEndpointSkip: ["power", "voltage", "current", "energy"]}),
             addSwitchCfgCluster,
             ...switchEndpoint("button", false),
             switchActions(["button"]),
