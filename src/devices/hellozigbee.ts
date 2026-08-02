@@ -218,10 +218,9 @@ export const definitions: DefinitionWithExtend[] = [
             ...switchEndpoint("button", false),
             switchActions(["button"]),
             m.deviceTemperature({reporting: false}),
-            // On-board HLW8012 metering (firmware exposes calibrated W / 0.1 V / mA
-            // on the ElectricalMeasurement cluster of the common endpoint; energy
-            // via seMetering comes in a later firmware)
-            m.electricityMeter({cluster: "electrical"}),
+            // On-board HLW8012 metering: calibrated W / 0.1 V / mA on the common
+            // endpoint ElectricalMeasurement cluster, lifetime kWh via seMetering
+            m.electricityMeter(),
         ],
         configure: configureReadSwitchCfg,
         ota: true,
